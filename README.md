@@ -1,2 +1,2 @@
-# 100-days-of-python
+# 100 Days of Python
 Projects developed during the course.
