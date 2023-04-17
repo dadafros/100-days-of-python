@@ -2,10 +2,7 @@ import requests
 import smtplib
 import os
 
-# Don't forget to export environment variables:
-# export GMAIL_PASS=phyxbrvdjihehkca
-# export OPENWEATHERMAP_APIKEY=a5e17ab40501733ee49df474587a7a21
-
+# Environment variables:
 API_KEY = os.environ.get("OPENWEATHERMAP_APIKEY")
 
 
