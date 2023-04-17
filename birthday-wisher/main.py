@@ -2,15 +2,15 @@ import smtplib
 from datetime import datetime
 import random
 import pandas as pd
+import os
 
 
 def send_email(to_addr, subject, message):
-    email = "dadafrossard@gmail.com"
-    password = "mkrskrzwiiaxqxtz"
+    email = "louvor.oitavajovem@gmail.com"
 
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()
-        connection.login(user=email, password=password)
+        connection.login(user=email, password=os.environ.get("GMAIL_PASS"))
         connection.sendmail(from_addr=email,
                             to_addrs=to_addr,
                             msg=f"Subject:{subject}\n\n{message}")
